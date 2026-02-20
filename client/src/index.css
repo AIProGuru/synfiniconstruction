@@ -21,6 +21,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);
@@ -346,31 +350,6 @@ img {
 }
 
 .work-content {
-  padding: 18px;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.team-card {
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-}
-
-.team-card img {
-  height: 240px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 0;
-}
-
-.team-content {
   padding: 18px;
 }
 

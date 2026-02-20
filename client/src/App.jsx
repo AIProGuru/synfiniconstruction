@@ -6,23 +6,6 @@ const mepImage = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?a
 const civilImage = "https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?auto=format&fit=crop&w=1600&q=80";
 const renderingImage = "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1600&q=80";
 
-const teamMembers = [
-  {
-    role: "Field Operations",
-    detail: "On-site coordination and safety-driven delivery.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    role: "MEP Coordination",
-    detail: "System integration that keeps trades aligned.",
-    image: "https://images.unsplash.com/photo-1542365885-bdd381c6df45?auto=format&fit=crop&w=1200&q=80"
-  },
-  {
-    role: "Structural Oversight",
-    detail: "Detailing and documentation from analysis to install.",
-    image: "https://images.unsplash.com/photo-1599266063691-6ffe63d38267?auto=format&fit=crop&w=1200&q=80"
-  }
-];
 
 const serviceCards = [
   {
@@ -160,7 +143,6 @@ export default function App() {
             <a href="#services">Services</a>
             <a href="#work">Work</a>
             <a href="#process">Process</a>
-            <a href="#team">Team</a>
             <a href="#contact" className="button ghost">Contact</a>
           </div>
         </nav>
@@ -376,7 +358,6 @@ export default function App() {
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#process">Process</a>
-          <a href="#team">Team</a>
           <a href="#contact">Contact</a>
         </div>
       </footer>
