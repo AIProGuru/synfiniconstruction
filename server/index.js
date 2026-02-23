@@ -17,6 +17,13 @@ function getTransporter() {
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
 
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) {
+    const missing = [
+      !SMTP_HOST && "SMTP_HOST",
+      !SMTP_PORT && "SMTP_PORT",
+      !SMTP_USER && "SMTP_USER",
+      !SMTP_PASS && "SMTP_PASS"
+    ].filter(Boolean);
+    console.warn("Email service not configured. Missing:", missing.join(", "));
     return null;
   }
 
